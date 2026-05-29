@@ -17,4 +17,15 @@ const { Content } = await render(post);
 
 <BlogPost {...post.data}>
 	<Content />
+
+  <div class="center-contents home-link">
+    <a href="/">Home</a>
+  </div>
 </BlogPost>
+
+
+<style>
+  .home-link {
+    padding-top:2rem;
+  }
+</style>
