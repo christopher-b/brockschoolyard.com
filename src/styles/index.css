@@ -1,0 +1,49 @@
+@import "pico.amber.css";
+
+:root {
+  /* Fonts */
+  /* These are taken from https://modernfontstacks.com */
+  --font-mono-code:
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
+  --font-transitional:
+    Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  --font-geohumanist:
+    "Avenir", "Montserrat", "Corbel", "URW Gothic", "source-sans-pro",
+    "sans-serif";
+  --font-system-ui: system-ui, sans-serif;
+
+  --font-body: var(--font-transitional), serif;
+  --font-display: var(--font-geohumanist), sans-serif;
+  --font-mono: var(--font-mono-code), monospace;
+
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.callout {
+  font-size: 1.75rem;
+}
+
+.center-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.measure {
+  max-width: 70ch;
+}
