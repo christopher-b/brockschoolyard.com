@@ -1,12 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/img/brock-logo-rainbow.png';
-const today = new Date();
 ---
 
 <footer>
   <div class="center-contents">
-    <img src={logo.src} alt="Brock Lightning rainbox logo" width="200" />
+    <Image src={logo} alt="Brock Lightning rainbox logo" width="200" />
   </div>
 </footer>
 <style>
