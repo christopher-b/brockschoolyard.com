@@ -3,7 +3,6 @@ import '../styles/index.css';
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/img/rainbow.webp';
 import { SITE_TITLE } from '../consts';
-import { Font } from 'astro:assets';
 
 interface Props {
 	title: string;
@@ -34,6 +33,7 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
+<link rel="me" href="https://sifa.id/p/cbennell.com">
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
