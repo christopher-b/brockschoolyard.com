@@ -11,7 +11,7 @@ Ms. Buhariwalla, Brock Public School's principal, provided an update on the proj
 - Once the construction fencing is installed, access to both the school yard and the parking lot will be completely closed.
 - Construction is expected to continue into the fall.
 
-A special note for families attending Brock ELC for daycare or camp:
+A special note for families attending **Brock ELC for daycare or camp**:
 
 - Door 2 will remain accessible; however, **access will only be available via Margueretta Street**. Access from Brock Avenue will be completely blocked, including the walking path between the parking lot and the school yard.
 
