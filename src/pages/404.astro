@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeLink from '../components/HomeLink.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+
+import { SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+).slice(0,3);
+---
+
+<BaseLayout title={`Page Not Found | ${SITE_TITLE}`} description="The page you're looking for doesn't exist.">
+  <div class="container">
+    <div class="center-contents">
+      <h1>Page Not Found</h1>
+      <p class="measure">Sorry, we couldn't find the page you were looking for.</p>
+    </div>
+
+    <hr>
+
+    <div>
+      <h2>Recent Updates</h2>
+      {
+        posts.map((post) => (
+          <ArticleCard post={post} />
+        ))
+      }
+      <HomeLink />
+    </div>
+  </div>
+</BaseLayout>

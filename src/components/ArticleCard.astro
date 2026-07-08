@@ -1,0 +1,26 @@
+---
+import FormattedDate from '../components/FormattedDate.astro';
+
+//interface Props {
+//post:
+//}
+
+const { post } = Astro.props;
+---
+<article>
+  <a href={`/blog/${post.id}/`}>
+    <small>
+      <FormattedDate date={post.data.pubDate} />
+    </small>
+    <h3 class="title">{post.data.title}</h4>
+  </a>
+</article>
+<style>
+    article * {
+    text-decoration: none;
+    transition: 0.2s ease;
+    & h3:hover {
+      text-decoration:underline;
+    }
+  }
+</style>
